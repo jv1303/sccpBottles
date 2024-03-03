@@ -1,0 +1,342 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": false,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "portrait",
+    "packageName": "com.texugo.sccp",
+    "pixelsRounding": true,
+    "projectUuid": "a319cbec-3af5-4176-bef0-5011857532c9",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "SCCP Bottles",
+    "description": "Entry for Acerola Jam 0",
+    "author": "Texugo Games",
+    "windowWidth": 96,
+    "windowHeight": 96,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 60,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 5463185,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "dark",
+      "logoAndProgressFadeInDuration": 0,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 1776213,
+      "progressBarHeight": 2,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": false
+    },
+    "authorIds": [
+      "hznqEZvms7SPg7T3W8G0lTYiuIQ2"
+    ],
+    "authorUsernames": [
+      "texugozap"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/panel1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\panel1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/indicator1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\indicator1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/mat1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\mat1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bar.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/panel2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\panel2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/panel3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\panel3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/indicator2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\indicator2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/indicator3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\indicator3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/indicator4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\indicator4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/indicator5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\indicator5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/indicator6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\indicator6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/hp1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hp1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/hp1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\hp1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/hp2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hp2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/hp2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\hp2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/mat2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\mat2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/mat3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\mat3.png",
+        "smoothed": false,
+        "userAdded": false
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
