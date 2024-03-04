@@ -319,6 +319,40 @@
         "name": "assets\\sprites\\mat3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/fonts/sccpBottlesFont.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\fonts\\sccpBottlesFont.fnt",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fonts/sccpBottlesFont_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fonts\\sccpBottlesFont_0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/bottle11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\bottle11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/smasher.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\smasher.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -328,15 +362,37 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "lastScore",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "folded": true,
+      "name": "remainingLife",
+      "type": "string",
+      "value": "0"
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/gameover"
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }

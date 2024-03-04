@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 3.7812385990536526,
+    "zoomFactor": 5.629512315680432,
     "windowMask": false
   },
   "objectsGroups": [
@@ -43,6 +43,18 @@
       "name": "gameOver",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "life",
+      "type": "number",
+      "value": 200
     }
   ],
   "instances": [
@@ -259,6 +271,53 @@
       "x": 4,
       "y": 24,
       "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "layer": "",
+      "name": "flash",
+      "persistentUuid": "1d468c98-39a8-4b12-a80f-3487ca9bfa28",
+      "width": 96,
+      "x": 132,
+      "y": 53,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 14,
+      "layer": "",
+      "name": "scoreText",
+      "persistentUuid": "f1d27245-b916-401e-acef-a9d4762bd4af",
+      "width": 42,
+      "x": 52,
+      "y": -12,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "smasher",
+      "persistentUuid": "69aacc4f-5c75-4fdf-9d64-238b669b2bdd",
+      "width": 0,
+      "x": 32,
+      "y": -40,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1601,6 +1660,54 @@
               ]
             }
           ]
+        },
+        {
+          "name": "a10",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\sprites\\bottle11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 32
+                      },
+                      {
+                        "x": 1,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1905,6 +2012,128 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 16,
+      "name": "flash",
+      "texture": "assets\\sprites\\hp1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 16,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "scoreText",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": " \n0000000",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "146;144;195",
+        "bitmapFontResourceName": "assets\\fonts\\sccpBottlesFont.fnt",
+        "textureAtlasResourceName": "assets\\fonts\\sccpBottlesFont_0.png",
+        "align": "right",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBitmapText",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "0",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\fonts\\sccpBottlesFont.fnt",
+        "textureAtlasResourceName": "assets\\fonts\\sccpBottlesFont_0.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "smasher",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "smash",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "direction",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\sprites\\smasher.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 31,
+                        "y": 0
+                      },
+                      {
+                        "x": 31,
+                        "y": 64
+                      },
+                      {
+                        "x": 1,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1918,6 +2147,9 @@
       },
       {
         "objectName": "bottle"
+      },
+      {
+        "objectName": "smasher"
       },
       {
         "objectName": "mat"
@@ -1942,6 +2174,15 @@
       },
       {
         "objectName": "bottleSpot3"
+      },
+      {
+        "objectName": "flash"
+      },
+      {
+        "objectName": "scoreText"
+      },
+      {
+        "objectName": "NewBitmapText"
       }
     ]
   },
@@ -1965,6 +2206,17 @@
           },
           "parameters": [
             "bottleSpot"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "flash",
+            "Opacity",
+            "=",
+            "0"
           ]
         },
         {
@@ -1993,6 +2245,415 @@
           },
           "parameters": [
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "mat",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "bottle",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "smasher",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "panel",
+            "=",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "indicator",
+            "=",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "score",
+            "=",
+            "7"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "energy",
+            "=",
+            "7"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "hp1",
+            "=",
+            "8"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "hp2",
+            "=",
+            "9"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "scoreText",
+            "=",
+            "9"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "flash",
+            "=",
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"lifeDrop\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "scoreText",
+            "Text",
+            "=",
+            "\"       \n\"+VariableString(score)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "life system\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "life",
+            ">",
+            "200"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "life",
+            "=",
+            "200"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "life",
+            ">",
+            "100"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+          },
+          "parameters": [
+            "hp2",
+            "Resizable",
+            "=",
+            "(42/100)*(Variable(life)-100)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "life",
+            "<=",
+            "100"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+          },
+          "parameters": [
+            "hp1",
+            "Resizable",
+            "=",
+            "(42/100)*Variable(life)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "score",
+            "<",
+            "840"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"lifeDrop\"",
+            ">=",
+            "0.1-(Variable(score)/10000)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "gameOver",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "life",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"lifeDrop\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "score",
+            ">=",
+            "840"
+          ]
+        },
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "score",
+            "<",
+            "1500"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"lifeDrop\"",
+            ">=",
+            "0.016"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "gameOver",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "life",
+            "-",
+            "0.6"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"lifeDrop\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "score",
+            ">=",
+            "1500"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"lifeDrop\"",
+            ">=",
+            "0.016"
+          ]
+        },
+        {
+          "type": {
+            "value": "SceneVariableAsBoolean"
+          },
+          "parameters": [
+            "gameOver",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "life",
+            "-",
+            "0.7"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"lifeDrop\""
           ]
         }
       ]
@@ -2048,7 +2709,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2078,7 +2738,7 @@
             "",
             "\"cooldown\"",
             ">=",
-            "0.3"
+            "0.15"
           ]
         },
         {
@@ -2214,6 +2874,68 @@
                 "=",
                 "\"error\""
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "lastScore",
+                "=",
+                "Variable(score)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "remainingLife",
+                "=",
+                "Variable(life)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "gameOver",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "score",
+                "+",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "life",
+                "+",
+                "10"
+              ]
             }
           ]
         },
@@ -2252,7 +2974,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2304,6 +3025,16 @@
                 "aberrationRdm",
                 "=",
                 "RandomInRange(0, 6)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "bottle",
+                "=",
+                "1"
               ]
             }
           ],
@@ -2360,7 +3091,7 @@
                     "bottle",
                     "Animation",
                     "=",
-                    "\"a\"+ToString(RandomInRange(1, 9))"
+                    "\"a\"+ToString(RandomInRange(1, 10))"
                   ]
                 },
                 {
@@ -2395,7 +3126,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2425,7 +3155,7 @@
             "",
             "\"cooldown\"",
             ">=",
-            "0.3"
+            "0.15"
           ]
         },
         {
@@ -2452,6 +3182,40 @@
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "smasher",
+                "smash",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "smasher",
+                "direction",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2529,6 +3293,33 @@
                 "focus",
                 "True"
               ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bottle",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "bottle",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "bottle",
+                "focus",
+                "True"
+              ]
             },
             {
               "type": {
@@ -2560,6 +3351,68 @@
                 "Animation",
                 "=",
                 "\"error\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "lastScore",
+                "=",
+                "Variable(score)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "remainingLife",
+                "=",
+                "Variable(life)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "gameOver",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "score",
+                "+",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "life",
+                "+",
+                "10"
               ]
             }
           ]
@@ -2651,6 +3504,16 @@
                 "=",
                 "RandomInRange(0, 5)"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "bottle",
+                "=",
+                "1"
+              ]
             }
           ],
           "events": [
@@ -2706,7 +3569,7 @@
                     "bottle",
                     "Animation",
                     "=",
-                    "\"a\"+ToString(RandomInRange(1, 9))"
+                    "\"a\"+ToString(RandomInRange(1, 10))"
                   ]
                 },
                 {
@@ -2753,7 +3616,6 @@
       "comment": "bottle movement"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "bottle",
       "conditions": [
@@ -2793,7 +3655,7 @@
               "parameters": [
                 "bottle",
                 "bottleSpot1",
-                "144",
+                "288",
                 ""
               ]
             },
@@ -2868,7 +3730,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "bottle",
       "conditions": [
@@ -2919,7 +3780,7 @@
               "parameters": [
                 "bottle",
                 "bottleSpot2",
-                "144",
+                "288",
                 ""
               ]
             },
@@ -2994,7 +3855,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "bottle",
       "conditions": [
@@ -3045,7 +3905,7 @@
               "parameters": [
                 "bottle",
                 "bottleSpot3",
-                "144",
+                "288",
                 ""
               ]
             },
@@ -3142,7 +4002,7 @@
           },
           "parameters": [
             "bottle",
-            "-144",
+            "-288",
             "0",
             ""
           ]
@@ -3171,6 +4031,223 @@
           "parameters": [
             "bottle",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "smash"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "smasher",
+            "smash",
+            "True"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "smasher",
+                "<",
+                "-9"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "smasher",
+                "direction",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "smasher",
+                "0",
+                "576",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "smasher",
+                ">=",
+                "-8"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "smasher",
+                "direction",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "smasher",
+                "direction",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "smasher",
+                "=",
+                "-8"
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraShake::ShakeCamera"
+              },
+              "parameters": [
+                "",
+                "0.07",
+                "0",
+                "0",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "smasher",
+                ">",
+                "-40"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "smasher",
+                "direction",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "smasher",
+                "0",
+                "-576",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "smasher",
+                "<=",
+                "-40"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "smasher",
+                "direction",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "smasher",
+                "=",
+                "-40"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "smasher",
+                "smash",
+                "False"
+              ]
+            }
           ]
         }
       ]
@@ -3613,7 +4690,87 @@
           ]
         }
       ],
-      "actions": []
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "flash",
+                "Opacity",
+                "=",
+                "255"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"gameOver\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "flash",
+                "Opacity",
+                "-",
+                "8"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"gameOver\"",
+                ">=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"gameOver\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -3624,7 +4781,6 @@
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
@@ -3686,6 +4842,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
