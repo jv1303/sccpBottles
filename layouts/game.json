@@ -316,7 +316,7 @@
       "persistentUuid": "69aacc4f-5c75-4fdf-9d64-238b669b2bdd",
       "width": 0,
       "x": 32,
-      "y": -40,
+      "y": -41,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
@@ -2488,6 +2488,52 @@
             "value": "VarScene"
           },
           "parameters": [
+            "life",
+            "<",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "gameOver",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "lastScore",
+            "=",
+            "Variable(score)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "remainingLife",
+            "=",
+            "round(Variable(life))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
             "score",
             "<",
             "840"
@@ -2892,7 +2938,7 @@
               "parameters": [
                 "remainingLife",
                 "=",
-                "Variable(life)"
+                "round(Variable(life))"
               ]
             }
           ]
@@ -3293,33 +3339,6 @@
                 "focus",
                 "True"
               ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bottle",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "bottle",
-          "conditions": [
-            {
-              "type": {
-                "value": "ObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "bottle",
-                "focus",
-                "True"
-              ]
             },
             {
               "type": {
@@ -3370,7 +3389,34 @@
               "parameters": [
                 "remainingLife",
                 "=",
-                "Variable(life)"
+                "round(Variable(life))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "bottle",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "bottle",
+                "focus",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bottle",
+                ""
               ]
             }
           ]
@@ -4173,7 +4219,7 @@
               "parameters": [
                 "smasher",
                 ">",
-                "-40"
+                "-41"
               ]
             },
             {
@@ -4212,7 +4258,7 @@
               "parameters": [
                 "smasher",
                 "<=",
-                "-40"
+                "-41"
               ]
             },
             {
@@ -4235,7 +4281,7 @@
               "parameters": [
                 "smasher",
                 "=",
-                "-40"
+                "-41"
               ]
             },
             {
