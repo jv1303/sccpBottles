@@ -25,7 +25,7 @@
     "author": "Texugo Games",
     "windowWidth": 96,
     "windowHeight": 96,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\texugo\\OneDrive\\Área de Trabalho\\gamedev\\builds\\SCCP Bottles\\HTML\\1.0",
     "maxFPS": 60,
     "minFPS": 60,
     "verticalSync": false,
@@ -352,6 +352,63 @@
         "metadata": "",
         "name": "assets\\sprites\\smasher.png",
         "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/gameOver.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\gameOver.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/gameOver1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\gameOver1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/gameOver2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprites\\gameOver2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sound/sfx/aproved.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\sfx\\aproved.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/sfx/wrong.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\sfx\\wrong.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sound/sfx/reproved.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sound\\sfx\\reproved.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": true
       }
     ],
